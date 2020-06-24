@@ -1,0 +1,66 @@
+
+…or create a new repository on the command line
+echo "# DefaultWeb_Practice" >> README.md
+#Git Basic Commands
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Sunny-softdev/DefaultWeb_Practice.git
+git push -u origin master
+                
+…or push an existing repository from the command line
+git remote add origin https://github.com/Sunny-softdev/DefaultWeb_Practice.git
+git push -u origin master
+
+To check the status:
+git status -s
+
+To add any new changes:
+git add [filname]
+
+To add all the changes:
+git add .
+
+To see the difference between the previous and new added changes
+
+git diff --cached
+
+To push to the master
+git push origin master
+
+To pull for the latest changes
+git pul origin master
+
+Log Details:
+git log
+git log --oneline
+
+Create a new branch:
+git branch [branch_name]
+
+Navigate to that branch:
+git checkout [branch_name]
+
+<<<<<<< HEAD
+Create a branch if not exists and then switch to that branch:
+git checkout -b [branch_name]
+
+Add and commit:
+git commit -am "Commit"
+=======
+Text added to Feature01
+>>>>>>> Feature01
+
+Push developer branch to Remote
+
+Command to push developer branch on remote:
+git push -u origin [branch_name]
+
+Changes to New Developer Branch created on Remote
+
+Delete Branch on Github:
+git push origin --delete [branch_name]
+
+Prune Command:
+git remote prune origin --dry-run
+git remote prune origin
